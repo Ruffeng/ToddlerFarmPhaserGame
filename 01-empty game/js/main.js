@@ -7,7 +7,10 @@ var GameState = {
     this.load.image('background', 'assets/images/background.png');
   },
   create: function (){
-
+    // Creating instance var called background
+    // we refer to the game variable and add a sprite
+    // coords are(0 = X top, 0 = Y Left, the key of the image that we called background)
+    this.background = this.game.add.sprite(0,0, 'background');
   },
   update: function() {
 
