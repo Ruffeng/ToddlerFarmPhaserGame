@@ -6,6 +6,8 @@ var GameState = {
     // params ( key, path)
     this.load.image('background', 'assets/images/background.png');
     this.load.image('chicken', 'assets/images/chicken.png');
+    this.load.image('horse', 'assets/images/horse.png');
+
   },
   create: function (){
     // Creating instance var called background
@@ -24,6 +26,10 @@ var GameState = {
     // be applied on both
     // this.chicken.anchor.setTo(0.5,0.5);
      this.chicken.anchor.setTo(0.5);
+    // Scaling an mage. Same concepts as ancor: (X,Y). 1 is the normal size
+    this.chicken.scale.setTo(2, 1);
+    this.horse = this.game.add.sprite(120, 10, 'horse');
+    this.horse.scale.setTo(0.5);
   },
   update: function() {
 
